@@ -1,0 +1,72 @@
+#container {
+	display: grid;
+	grid-template-areas: 
+	'game game game'
+	'menu menu menu'
+	'dialogue dialogue dialogue'
+	'inv inv inv';
+	width: 1500px;
+	height: 950px;
+	margin: 0px auto;
+}
+
+div#game {
+	grid-area: game;
+	display: block;
+	background-color: darkgray;
+	background-size: 1500px 750px;
+	height: 750px;
+}
+
+#menu {
+	grid-area: menu;
+	display: block;
+	background-color: gray;
+	height: 75px;
+}
+
+#dialogues {
+	grid-area: dialogue;
+	background-color: gray;
+	display: block;
+	height: 35px;
+}
+#inventory {
+	grid-area: inv;
+	height: 90px;
+	background-color: gray;
+}
+div#buttons {
+	margin-top: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+p{
+	margin: 0px;
+}
+p#text {
+	text-align: center;
+}
+
+.invitem {
+	margin: 5px;
+	border: 2px black solid;
+	background-color: lightgray;
+}
+
+h1 {
+	color: red;
+	margin: 0px;
+	width: 1500px;
+	text-align: center;
+	position: absolute;
+	top: 250px;
+}
+
+#deathdialogue {
+	top: 400px;
+}
+
+
+.blur {-webkit-filter: blur(1px);filter: blur(1px);}
